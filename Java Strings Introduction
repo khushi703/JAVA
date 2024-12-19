@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      String A = sc.next();
+      String B = sc.next();
+      System.out.println(A.length()+B.length());
+      if(A.compareTo(B)>1)
+      System.out.println("Yes");
+      else
+      System.out.println("No");
+      String capitalA = A.toUpperCase();
+       String capitalB = B.toUpperCase();
+        System.out.println(capitalA.substring(0,1)+A.substring(1)+ " "
+    +capitalB.substring(0,1)+B.substring(1));
+    }
+}
